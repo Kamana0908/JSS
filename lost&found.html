@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission form- JSS</title>
+    <link rel="shortcut icon" href="image/jsslogoicon.png" type="image/svg+xml">
+    <link rel="stylesheet" href="css/admission_style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	
+</head>
+<body>
+
+  <section class="header">
+    <nav>
+        <a href="index.html"><img src="image/jsslogoicon.png" height="100px" width="20px" id="logo-img"></a>
+
+        <div class="nav-links" id="navLinks">
+          <span class="icon" onclick="hidemenu()">&#10005;</span>  
+          <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Admission_page.html">Admission</a></li>
+                <li><a href="index.html#course_call">Course</a></li>
+                <li><a href="fees_page.html">Fees</a></li>
+                <li><a href="lost&found.html">Lost & Found</a></li>
+                <li><a href="Contact_page.html">Contact</a></li>
+				<li><a href="erp.html">ERP</a></li>
+            </ul>
+        </div> 
+        <span class="icon" onclick="showmenu()">&#9776;</span>
+    </nav>
+
+	<div class="wrapper">
+		<div class="r_form_wrap">
+			
+			<div class="title">
+				<p>Report Lost/Found Item</p>
+			</div>
+			
+			<!-- Admission from -->
+			<div class="r_form">
+				<form method="post" onsubmit="sendmail(); reset(); return false;">
+					<div class="input_wrap">
+						<label for="course">Type of Item:</label>
+						<div class="input_item">
+							<i class="fa fa-caret-square-o-down" aria-hidden="true"id="icon" ></i>
+					<select id="course" name="cars" class="input" required>
+					<option value="select"> Select the Item</option>
+					<option value="lost">Lost </option>
+					<option value="found">Found</option>
+					</select>
+					</div>
+					</div>
+
+					<div class="input_wrap">
+						<label for="yourname">Item Name</label>
+						<div class="input_item">
+							<i class="fa fa-list-alt" id="icon"></i>
+							<!-- <i class="" aria-hidden="true"></i> -->
+							<input type="text" name="your name" class="input" id="yourname" placeholder="Enter the item name" required>
+						</div>
+					</div>
+					
+					<label for="itemDescription">Item Description</label>
+            <textarea id="itemDescription" name="itemDescription" placeholder="Provide a brief description of the item" cols="63" rows="5" required></textarea>
+
+					<div class="input_wrap">
+						<label for="phone">Your Contact Info</label>
+						<div class="input_item">
+							<i class="fa fa-phone-square" id="icon"></i>
+							<input type="number" name="phone" class="input" id="phone" placeholder="Enter the Mobile number" required>
+						</div>
+					</div>
+				
+					<input type="submit" class="button" value="Submit">
+					
+					<div ></div>
+					<input type="reset" class="clear_ad" value="Clear">
+					
+				</form>
+			</div>
+	
+		</div>
+	</div>
+	</section>
+	<div class="none_div">
+
+	</div>
+	</body>
+	
+</html>

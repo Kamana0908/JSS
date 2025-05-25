@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission form- JSS</title>
+    <link rel="shortcut icon" href="image/jsslogoicon.png" type="image/svg+xml">
+    <link rel="stylesheet" href="css/admission_style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	
+</head>
+<body>
+
+  <section class="header">
+    <nav>
+        <a href="index.html"><img src="image/jsslogoicon.png" height="100px" width="20px" id="logo-img"></a>
+
+        <div class="nav-links" id="navLinks">
+          <span class="icon" onclick="hidemenu()">&#10005;</span>  
+          <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Admission_page.html">Admission</a></li>
+                <li><a href="index.html#course_call">Course</a></li>
+                <li><a href="fees_page.html">Fees</a></li>
+				<li><a href="lost&found.html">Lost & Found</a></li>
+                <li><a href="Contact_page.html">Contact</a></li>
+				<li><a href="erp.html">ERP</a></li>
+            </ul>
+        </div> 
+        <span class="icon" onclick="showmenu()">&#9776;</span>
+    </nav>
+
+	<div class="wrapper">
+		<div class="r_form_wrap">
+			
+			<div class="title">
+				<p> ERP Login</p>
+			</div>
+			
+			<!-- Admission from -->
+			<div class="r_form">
+				<form method="post" onsubmit="sendmail(); reset(); return false;">
+					
+		
+					<div class="input_wrap">
+						<label>I am a</label>
+						<div class="input_radio">
+							<div class="input_radio_item">
+								<input type="radio" id="male" name="gender" class="radio" value="male" checked>
+								<label for="male" class="radio_mark">
+								Student</label>
+							</div>
+							<div class="input_radio_item">
+								<input type="radio" id="female" name="gender" class="radio" value="female">
+								<label for="female" class="radio_mark">
+									Parent</label>
+							</div>
+							<div class="input_radio_item">
+								<input type="radio" id="others" name="gender" class="radio" value="others">
+								<label for="others" class="radio_mark">
+									Staff</label>
+							</div>
+						</div>
+					</div>
+                    
+                    <div class="input_wrap">
+						<label for="yourname">Username</label>
+						<div class="input_item">
+							<i class="fa fa-user" id="icon"></i>
+							<input type="text" name="your name" class="input" id="yourname" placeholder="Enter the username" required>
+						</div>
+					</div>
+	
+					<div class="input_wrap">
+						<label for="password">Password</label>
+						<div class="input_item">
+							<i class="fa fa-key" id="icon"></i>
+							<input type="password" name="password" class="input" id="password" placeholder="Enter the password" >
+						</div>
+					</div>
+				
+
+					
+					<input type="submit" class="button" value="Login">
+
+                    <br>
+                   <br>
+
+                    <input type="submit"  class="button" value="Reset Password">
+
+                    
+					
+					
+					
+				</form>
+			</div>
+	
+		</div>
+	</div>
+	</section>
+	<div class="none_div">
+
+	</div>
+	</body>
+	
+</html>
